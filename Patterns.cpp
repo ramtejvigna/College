@@ -23,17 +23,6 @@ void reverseTriangle(int n) {
         cout << endl;
     }
 }
-void reverseTriangleLove(int n) {
-    for(int i=1;i<=2*n;i++) {
-        for(int j=1;j<=i;j++) {
-            cout << " ";
-        }
-        for(int j=0;j<2*n-i;j++) {
-            cout << " *";
-        }
-        cout << endl;
-    }
-}
 void star(int n) {
     for(int i=0;i<n/2;i++) {
         for(int j=0;j<n-1-i;j++) {
@@ -73,27 +62,6 @@ void star(int n) {
         }
         cout << endl;
     }
-}
-void love(int n) {
-    for(int i=1;i<=n;i++) {
-        for(int j=1;j<=n-i;j++) {
-            cout << " ";
-        }
-        for(int j=1;j<=i;j++) {
-            cout << " *";
-        }
-        for(int j=1;j<=2*(n-i);j++) {
-            cout << " ";
-        }
-        for(int j=1;j<=i;j++) {
-            cout << " *";
-        }
-        for(int j=1;j<=n-i;j++) {
-            cout << " ";
-        }
-        cout << endl;
-    }
-    reverseTriangleLove(n);
 }
 
 int main() {
