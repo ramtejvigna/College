@@ -13,8 +13,8 @@ bool coPrime(int i, int j) {
 int main() {
     int n; cin >> n;
     vector<vector<int>> vect;
-    for(int i=2;i<n;i++) {
-        for(int j=2;j<n;j++) {
+    for(int i=1;i<n;i++) {
+        for(int j=2;j<=n;j++) {
             if(coPrime(i,j)) {
                 // Dont push if the vector already contains those elements
                 vect.push_back({i,j});
