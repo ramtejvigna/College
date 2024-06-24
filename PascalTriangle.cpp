@@ -28,13 +28,13 @@ vector<vector<int>> pascalTriangle(int n) {
 
 int main()
 {
-    int n = 5;
+    int n; cin >> n;
     vector<vector<int>> ans = pascalTriangle(n);
     for (auto it : ans) {
         for (auto ele : it) {
             cout << ele << " ";
         }
-        cout << "n";
+        cout << "\n";
     }
     return 0;
 }

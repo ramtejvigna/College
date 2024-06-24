@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include<iostream>
 using namespace std;
 
 int main() {
@@ -18,7 +17,7 @@ int main() {
         else {
             cnt++;
             char temp = (char)(start+tempIndex-1);
-            cout << temp << " " << tempIndex << endl;
+            cout << temp << " ";
             tempIndex--;
         }
     }
