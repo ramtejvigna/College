@@ -48,7 +48,7 @@ void NumericTriangle(int n) {
     for(int i=0;i<n;i++) {
         int num = i+1;
         for(int j=0;j<2*i+1;j++) {
-            if(j<=i/2) {
+            if(j<=((2*i-1)/2)) {
                 cout << num << " ";
                 num++;
             } else {
@@ -81,6 +81,6 @@ int main()
     // AlternateAlpha(n);
     // AlphaRightTriangle(n);
     // SquareNumbered(n);
-    // NumericTriangle(n);
-    AlphaReverse(n);
+    NumericTriangle(n);
+    // AlphaReverse(n);
 }
