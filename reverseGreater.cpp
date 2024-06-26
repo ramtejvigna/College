@@ -21,15 +21,14 @@ int main() {
 
     for (int j = 0; j < arr.size(); j++) {
         if (arr[j].size() == count) {
-            cout << "Before " << arr[j] << endl;
             sort(arr[j].begin(), arr[j].end());
-            cout << "After " << arr[j] << endl;
-        } else if (arr[j].size() > count) {
-            cout << "Before " << arr[j] << endl;  
+        } else if (arr[j].size() > count) { 
             reverse(arr[j].begin(), arr[j].end());
-            cout << "After " << arr[j] << endl;
         }
     }
 
+    for(int j=0;j<arr.size();j++) {
+        cout << arr[j] << " ";
+    }
     return 0;
 }
